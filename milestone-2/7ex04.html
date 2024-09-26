@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 5px;
+        }
+
+        .box {
+            /* border: 3px solid red; */
+            display: flex;
+            gap: 10px;
+        }
+
+        .box:nth-child(2n) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        @media screen and (max-width: 576px) {
+            .box {
+                display: block;
+                padding-bottom: 10px;
+            }
+
+            .box:nth-child(2n) {
+                display: block;
+                padding-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 1</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 2</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 3</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 4</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 5</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 6</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 7</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+        <div class="box">
+            <img src="healthy-food.jpg" alt="">
+            <div>
+                <h3>Heading - 8</h3>
+                <p>The ideal approach is to combine techniques for the best balance between performance, responsiveness,
+                    and layout control</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
