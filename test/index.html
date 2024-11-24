@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css variable hold not only color but also other properties like padding etc */
+        /* global variables */
+        :root {
+            --color: blue;
+            --seccolor: rgb(109, 109, 255);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            /* background-color: green; */
+            background-color: var(--color);
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 20px;
+            border: 3px solid var(--seccolor);
+        }
+
+        /* local variable */
+        ul li:first-child {
+            /* we override here */
+            --color: orange;
+            background-color: var(--color, red);
+        }
+
+        .container {
+            /* background-color: rgb(5, 188, 5); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, possimus dolore natus illum inventore
+        consequuntur commodi! Nobis possimus, illum repellendus nulla sequi laborum modi animi facere assumenda soluta
+        rerum vel eum ducimus fugit corporis molestias at molestiae repellat quis, similique, velit tempora. Laborum,
+        praesentium tempora.
+    </div>
+</body>
+
+</html>
