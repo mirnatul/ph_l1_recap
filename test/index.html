@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* @property --color {
+            syntax: "<color>";
+            inherits: false;
+            initial-value: blue;
+        } */
+
+        /* we work it for repeat style, so we change it in one place, not every where we used */
         /* css variable hold not only color but also other properties like padding etc */
         /* global variables */
+        /* there if we don't set the value as color this will give an error because of the property's syntax */
         :root {
             --color: blue;
             --seccolor: rgb(109, 109, 255);
@@ -17,6 +25,10 @@
         * {
             margin: 0;
             padding: 0;
+            width: calc(100% - 100px);
+            width: max(50% - 300px);
+            width: min(50% - 300px);
+            width: calc((100% - 5px) / 2);
         }
 
         .nav {
@@ -36,14 +48,20 @@
 
         /* local variable */
         ul li:first-child {
-            /* we override here */
             --color: orange;
             background-color: var(--color, red);
         }
 
         .container {
-            /* background-color: rgb(5, 188, 5); */
+            --fontSize: 20px;
+            font-size: var(--fontSize);
             background-color: var(--seccolor);
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                --fontSize: 16px;
+            }
         }
     </style>
 </head>
@@ -63,6 +81,19 @@
         rerum vel eum ducimus fugit corporis molestias at molestiae repellat quis, similique, velit tempora. Laborum,
         praesentium tempora.
     </div>
+
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- Most important -->
+<!-- 
+    1. CSS variable have access to the DOM, which means that you can change them with JS
+-->
