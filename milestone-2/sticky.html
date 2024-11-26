@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Within a Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .section {
+            /* height: 600px; */
+            /* Define the height of each section */
+            border: 2px solid #ccc;
+            margin-bottom: 20px;
+            /* Spacing between sections */
+            /* position: relative; */
+            /* overflow: auto; */
+        }
+
+        .sticky {
+            position: sticky;
+            top: 10px;
+            /* Stick 10px below the top of the viewport */
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid #666;
+        }
+
+        .content {
+            height: 1000px;
+            /* Simulate scrollable content */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse possimus natus in molestiae accusantium fugiat
+            quaerat ducimus adipisci. Molestiae eligendi iure atque? Eligendi itaque et similique sequi vitae
+            architecto, officiis tempora expedita molestias. Nihil, illo doloremque vero, repellat iusto nisi eum
+            perferendis ad nemo placeat provident sit ab pariatur deleniti tempora cupiditate alias, id non dolor
+            praesentium? Labore minus aspernatur illo nostrum esse, quis animi deleniti distinctio reiciendis doloribus,
+            dicta quia, cum suscipit. Quia quasi hic quidem perspiciatis animi soluta quae est eius aperiam adipisci
+            tempora qui nesciunt optio debitis sapiente nemo voluptate, velit sunt iure. Tempora fugiat earum laborum.
+        </p>
+        <div class="sticky">I stick here but vanish when my section scrolls out!</div>
+        <div class="content">
+            <p>Scroll within this section to see the sticky behavior.</p>
+        </div>
+    </div>
+    <div class="section">
+        <p>Another section for demonstration.</p>
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>

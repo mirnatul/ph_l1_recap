@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            /* Push content to edges */
+            align-items: center;
+            /* Center items vertically */
+            background-color: #333;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+
+        /* Left side links */
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            /* Space between links */
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        /* Search bar */
+        .search-bar {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .search-bar input {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #777;
+        }
+
+        main {
+            padding-top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <!-- Left side links -->
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Section</a>
+        </div>
+
+        <!-- Right side search bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+    </div>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem asperiores accusamus eum odit
+            eveniet ipsa sint ratione iste voluptatum quia numquam id architecto dignissimos, tenetur deserunt itaque
+            quod eaque magni accusantium consectetur. Officia rem consectetur, dolorem reprehenderit qui quisquam
+            veritatis tempora suscipit mollitia voluptatem, quas, vel similique iste non!</p>
+    </main>
+</body>
+
+</html>
